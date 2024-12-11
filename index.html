@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai All-inclusive</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- inicio navegação -->
+    <nav> 
+        <img src="img/logo.png" alt="logo" class="logo">
+        <div class="navbar">
+            <ul>
+                <li class="active">Home</li>
+                <li>Experiências Exclusivas</li>
+                <li>Personalize Sua Viagem</li>
+                <li>Clientes</li>
+            </ul>
+        </div>
+    </nav>    
+
+    <!-- inicio slide -->
+    <div class="slider">
+        <button class="slider--btn slider--btn__prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6" />
+            </svg>
+        </button>
+    
+        <div class="slides__wrapper">
+            <div class="slides">
+                <!-- slide 1 -->
+                <div class="slide" data-current>
+                    <div class="slide__inner">
+                        <div class="slide--image__wrapper">
+                            <img class="slide--image" src="img/imgSlide1.jpg" alt="Image 1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="slide__bg" style="--bg: url(img/imgSlide1.jpg); --dir: 0" data-current></div>
+    
+                <!-- slide 2 -->
+                <div class="slide" data-next>
+                    <div class="slide__inner">
+                        <div class="slide--image__wrapper">
+                            <img class="slide--image" src="img/imgSlide2.jpg" alt="Image 2" />
+                        </div>
+                    </div>
+                </div>
+                <div class="slide__bg" style="--bg: url(img/imgSlide2.jpg); --dir: 1" data-next></div>
+    
+                <!-- slide 3 -->
+                <div class="slide" data-previous>
+                    <div class="slide__inner">
+                        <div class="slide--image__wrapper">
+                            <img class="slide--image" src="img/imgSlide3.jpg" alt="Image 3" />
+                        </div>
+                    </div>
+                </div>
+                <div class="slide__bg" style="--bg: url(img/imgSlide3.jpg); --dir: -1" data-previous></div>
+            </div>
+            <div class="slides--infos">
+                <!-- Slide Info 1 -->
+                <div class="slide-info" data-current>
+                    <div class="slide-info__inner">
+                        <div class="slide-info--text__wrapper">
+                            <div data-title class="slide-info--text">
+                                <span>Burj Khalifa</span>
+                            </div>
+                            <div data-subtitle class="slide-info--text">
+                                <span>Majestade Vertical</span>
+                            </div>
+                            <div data-description class="slide-info--text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide Info 2 -->
+                <div class="slide-info" data-next>
+                    <div class="slide-info__inner">
+                        <div class="slide-info--text__wrapper">
+                            <div data-title class="slide-info--text">
+                                <span>Deserto</span>
+                            </div>
+                            <div data-subtitle class="slide-info--text">
+                                <span>Oásis do Luxo</span>
+                            </div>
+                            <div data-description class="slide-info--text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Slide Info 3 -->
+                <div class="slide-info" data-previous>
+                    <div class="slide-info__inner">
+                        <div class="slide-info--text__wrapper">
+                            <div data-title class="slide-info--text">
+                                <span>Palm Jumeirah</span>
+                            </div>
+                            <div data-subtitle class="slide-info--text">
+                                <span>Dubai's Paradise</span>
+                            </div>
+                            <div data-description class="slide-info--text">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <button class="slider--btn slider--btn__next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6" />
+            </svg>
+        </button>
+    </div>
+    
+    <div class="loader">
+        <span class="loader__text">0%</span>
+    </div>
+    <!-- fim slide -->
+
+    <!-- inicio card -->    
+    <h1 class="tituloCards">As melhores experiências</h1>
+
+    <div class="cards-container">
+        <div class="card-wrap">
+            <div class="card">
+                <div class="card-bg" style="background-image: url('img/lugar1.jpeg');"></div>
+                <div class="card-info">
+                    <h1>Hoteis</h1>
+                    <p>Os melhores hotéis de Dubai oferecem luxo, conforto e experiências inesquecíveis, com serviços exclusivos e vistas de tirar o fôlego!</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-wrap">
+            <div class="card">
+                <div class="card-bg" style="background-image: url('img/lugar2.jpeg');"></div>
+                <div class="card-info">
+                    <h1>Melhores Restaurantes</h1>
+                    <p>Os melhores restaurantes de Dubai combinam sabores exóticos, pratos refinados e um ambiente sofisticado, proporcionando uma experiência gastronômica única!</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-wrap">
+            <div class="card">
+                <div class="card-bg" style="background-image: url('img/lugar3.jpeg');"></div>
+                <div class="card-info">
+                    <h1>Luxo e Aventura</h1>
+                    <p>Dubai é o lar do icônico Burj Al Arab, o hotel 7 estrelas que redefine luxo. Cada detalhe é projetado para oferecer uma experiência única e inesquecível.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-wrap">
+            <div class="card">
+                <div class="card-bg" style="background-image: url('img/lugar4.jpeg');"></div>
+                <div class="card-info">
+                    <h1>Aventura no Deserto</h1>
+                    <p>Os safáris no deserto são imperdíveis, com passeios de Land Cruiser pelas dunas, sandboard, e jantares ao ar livre sob o céu estrelado, acompanhados por danças típicas e shows culturais.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim card -->
+
+    <!-- inicio pacotes -->
+    <h1 class="tituloPacotes">Pacotes</h1>
+<div class="cards-container">
+  <div class="cardes">
+    <div class="cardes-img">
+        <img src="img/pacote2.jpeg" alt="pacoteimg" id="imgPacotes">
+    </div>
+    <div class="cardes-info">
+      <p class="text-title">Pacote Romântico para Casais: Dubai a Dois</p>
+      <p class="text-body">
+        <ul id="topico">
+          <li>Jantar romântico em um restaurante premiado à beira do Burj Khalifa</li>
+          <li>Cruzeiro privativo no dhow (barco tradicional árabe) com jantar à luz de velas</li>
+          <li>Spa para casais em um resort 5 estrelas</li>
+          <li>Passeio pelo deserto em um safari privativo</li>
+          <li>Duração sugerida: 5 dias / 4 noites</li>
+        </ul>
+      </p>
+    </div>
+    <div class="card-footer">
+      <span class="text-title">
+        <a href="" id="comprar">COMPRAR</a>
+      </span>
+    </div>
+  </div>
+
+  <div class="cardes">
+    <div class="cardes-img">
+        <img src="img/pacote3.jpeg" alt="pacoteimg" id="imgPacotes">
+    </div>
+    <div class="cardes-info">
+      <p class="text-title"> Pacote Aventura Solo: Explorando Dubai do Seu Jeito
+    </p>
+      <p class="text-body">
+        <ul id="topico">
+          <li>Passeio no deserto com atividades como sandboard e passeio de camelo
+        </li>
+          <li>Tour guiado pelo Gold Souk e pelos mercados tradicionais
+        </li>
+          <li>Visita à Palm Jumeirah e ao Aquaventure Water Park
+        </li>
+          <li>Experiência de compras no Mall of the Emirates</li>
+          <li>Duração sugerida: 4 dias / 3 noites
+        </li>
+
+        </ul>
+      </p>
+    </div>
+    <div class="card-footer">
+      <span class="text-title">
+        <a href="" id="comprar">COMPRAR</a>
+      </span>
+    </div>
+  </div>
+
+  <div class="cardes">
+    <div class="cardes-img">
+        <img src="img/pacote1.jpeg" alt="pacotes3" id="imgPacotes">
+    </div>
+    <div class="cardes-info">
+      <p class="text-title">Pacote Familiar: Dubai para Todos</p>
+      <p class="text-body">
+        <ul id="topico">
+          <li>Visita ao Dubai Aquarium</li>
+          <li>Dia no IMG Worlds of Adventure (parque temático indoor)
+        </li>
+        <li>Safari no deserto com atividades para todas as idades
+        </li>
+          <li>Passeio no Miracle Garden</li>
+          <li>Atividades no parque temático</li>
+          <li>Duração sugerida: 6 dias / 5 noites
+        </li>
+        </ul>
+      </p>
+    </div>
+    <div class="card-footer">
+      <span class="text-title">
+        <a href="" id="comprar">COMPRAR</a>
+      </span>
+    </div>
+  </div>
+
+  <div class="cardes">
+    <div class="cardes-img">
+        <img src="img/pacote4.jpeg" alt="imgPacotes" id="imgPacotes">
+    </div>
+    <div class="cardes-info">
+      <p class="text-title">Pacote Luxo: Dubai Experience Premium</p>
+      <p class="text-body">
+        <ul id="topico">
+          <li>Hospedagem em hotel 7 estrelas</li>
+          <li>Passeio de helicóptero por Dubai</li>
+          <li>Jantar exclusivo no Atlantis</li>
+          <li>Passeio em iate privativo com jantar gourmet
+        </li>
+        <li>Acesso ao serviço de concierge privado para experiências personalizadas
+        </li>
+          <li>Duração sugerida: 5 dias / 4 noites</li>
+        </ul>
+      </p>
+    </div>
+    <div class="card-footer">
+      <span class="text-title">
+        <a href="" id="comprar">COMPRAR</a>
+      </span>
+    </div>
+  </div>
+</div>
+
+    
+    <!-- fim pacotes -->
+
+    <!-- Inicio avaliações -->
+    <h1 class="tituloClientes">Clientes</h1>
+
+    <div class="reviews-container">
+        <div class="cardies">
+          <div class="stars">
+            <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+          
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+          
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+          
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+          
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </div>
+          
+          </div>
+          <div class="infos">
+            <p class="date-time">2 dias atrás</p>
+            <p class="description">
+                Experiência fantástica! O serviço foi excelente e superou todas as minhas expectativas. O atendimento foi muito atencioso e, sem dúvida, recomendo a quem procura qualidade e profissionalismo!
+            </p>
+          </div>
+          <div class="author">— Leo Coelho</div>
+        </div>
+        <div class="cardies">
+          <div class="stars">
+            <div class="stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+          
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+          
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+          
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+          
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                </svg>
+              </div>
+          
+          </div>
+          <div class="infos">
+            <p class="date-time">5 dias atrás</p>
+            <p class="description">
+                Correu tudo impecavelmente bem! Desde o primeiro contacto até ao final, tudo foi tratado com grande cuidado e eficiência. Sem dúvida que voltarei. Muito obrigado!
+            </p>
+          </div>
+          <div class="author">— Mateus Lopes</div>
+        </div>
+        <!-- Adicione mais avaliações aqui -->
+        
+<div class="cardies">
+    <div class="stars">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+      </svg>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="star">
+        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+      </svg>
+    </div>
+
+    <div class="infos">
+      <p class="date-time">
+                      3 dias atrás
+      </p>
+      <p class="description">
+        Simplesmente incrível! A qualidade do serviço é impecável, e toda a equipa foi muito profissional. Fiquei muito impressionado com a atenção ao detalhe. Recomendo sem hesitar!
+      </p>
+  </div>
+
+  <div class="author">
+    — Enzo Martins
+  </div>
+ </div>
+
+      </div>
+    <!-- Fim Avaliações -->
+
+    <!-- inicio rodape -->
+    <div class="footer">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo" id="logoFooter">
+        </div>
+        <ul id="txtFooter">
+            <li>Termos de Serviço</li>
+            <li>Privacidade</li>
+            <li>Ajuda</li>
+        </ul>
+        
+    </div>
+    
+    
+    <!-- fim rodape -->
+
+</body>
+</html>
